@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.2">
+  <zoom_level>6</zoom_level>
+  <element>
+    <type>com.baselet.element.old.allinone.SequenceDiagram</type>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>1038</w>
+      <h>426</h>
+    </coordinates>
+    <panel_attributes>title: sample
+_Timer~id1_|_Task1~id2_|_Task2~id3_|_Task3~id4_|_Task4~id5_|_Task5~id6_|_Flash~id7_|_IntODBH~id8_|_CC~id9_|_TimingMask~id10_|_Fan~id11_
+id1-&gt;id2:id1,id2:e1,e2
+id2-&gt;id6:id2,id6:e3,e4
+id2-&gt;id3:id2,id3:e5,e6
+id1-&gt;id3:id1,id3:e7,e8
+id3-&gt;id4:id3,id4:e9,e10
+
+id4-&gt;id6:id4,id6:e11,e12
+
+id1-&gt;id5:id1,id5:e13,e14
+id5-&gt;id6:id5,id6:e15,e16
+
+iframe{:int (p=1) IRQ1
+id8-&gt;id10:id8,id10:e17,e18
+id10-&gt;id8:id10,id8:e20,e19
+iframe}
+
+iframe{:int (p=1) IRQ2
+id9-&gt;id8:id9,id8:e22,e21
+id8-&gt;id7:id8,id7:e24,e23
+iframe}
+
+
+iframe{:int (p=1) IRQ3
+id9-&gt;id8:id9,id8:e26,e25
+id8-&gt;id11:id8,id11:e27,e28
+iframe}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>492</x>
+      <y>510</y>
+      <w>294</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>spec:
+0&lt;e3-e2&lt;=72
+0&lt;e7-e6&lt;=1
+e5-e1=88
+e9-e5=8
+e13-e9=8
+e16-e13=16
+0&lt;proj(e11-e10)&lt;=12
+0&lt;proj(e15-e14)&lt;=2
+0&lt;proj(e10-e17)&lt;=0.5
+0&lt;proj(e23-e22)&lt;=1.4
+0&lt;proj(e27-e26)&lt;=0.5
+
+prop:
+e13-e9&lt;16
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
