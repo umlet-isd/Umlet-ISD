@@ -4,8 +4,8 @@
   <element>
     <type>com.baselet.element.old.allinone.SequenceDiagram</type>
     <coordinates>
-      <x>80</x>
-      <y>90</y>
+      <x>60</x>
+      <y>30</y>
       <w>630</w>
       <h>620</h>
     </coordinates>
@@ -39,8 +39,8 @@ iframe}</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>740</x>
-      <y>470</y>
+      <x>720</x>
+      <y>410</y>
       <w>230</w>
       <h>190</h>
     </coordinates>

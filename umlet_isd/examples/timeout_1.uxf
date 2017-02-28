@@ -4,53 +4,51 @@
   <element>
     <type>com.baselet.element.old.allinone.SequenceDiagram</type>
     <coordinates>
-      <x>40</x>
-      <y>90</y>
-      <w>820</w>
-      <h>590</h>
+      <x>100</x>
+      <y>130</y>
+      <w>410</w>
+      <h>470</h>
     </coordinates>
-    <panel_attributes>title: isd timeout1
-_DataRecv~id1_|_DataChecker~id2_|_uBuffer~id3_|_uBufferRd~id4_|_Bus~id5_
+    <panel_attributes>title: sd Spin. Comp.
+_AOC~id1_|_MC~id2_|_CC~id3_|_SC~id4_
+iframe{:loop (9,9)
+id2-&gt;id3:id2,id3:e0,e1
+	iframe{:int (p=1) IRQ1
+id4-&gt;id3:id4,id3:e3,e2
+id3-&gt;id4:id3,id4:e4,e5
+	iframe}
+id3-&gt;id2:id2,id3:e7,e6
+id2-&gt;id1:id2,id1:e9,e8
+	iframe{:int (p=2) IRQ2
+id4-&gt;id2:id4,id2:e11,e10
+	iframe}
+iframe}
 
-iframe{:loop (1,10)
-id1-&gt;id2:id1,id2:e1,e2
-id1-&gt;id2:id1,id2:e3,e4
-id1-&gt;id3:id1,id3:e5{ready=0},e6{ready=1}
-iframe}
-iframe{:int (p=1) DMA [ready==1]
-iframe{:opt [ready==1]
 
-id3-&gt;id4:id3,id4:e7,e8
-iframe}
-iframe}
 
-iframe{:int (p=1) 1153B 
-iframe{:opt [ready==0]
-id1-&gt;id3:id1,id3:e9,e10
-id3-&gt;id5:id3,id5:e11,e12
-iframe}
-iframe}</panel_attributes>
+
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>900</x>
-      <y>400</y>
-      <w>250</w>
-      <h>270</h>
+      <x>580</x>
+      <y>370</y>
+      <w>220</w>
+      <h>190</h>
     </coordinates>
     <panel_attributes>spec:
-2&lt;=proj(e2-e1)&lt;=2.5
-5&lt;=e3-e1&lt;=8
-16&lt;=proj(e6-e5)&lt;=20
-1&lt;e5-e3&lt;4
-16&lt;=proj(e8-e7)&lt;=32
-0&lt;proj(e12-e9)&lt;=10
+e2-e0=0
+e10-e0=400
+2&lt;=e8-e7&lt;=4
+128&lt;=proj(e5-e2)&lt;=132
+232&lt;=proj(e7-e0)&lt;=256
+8&lt;=proj(e9-e8)&lt;=10
+28&lt;=proj(e11-e10)&lt;=32
 
-
-prop:
-e6&lt;e12
+forbidden prop:
+10&lt;e9-e8
 </panel_attributes>
     <additional_attributes/>
   </element>

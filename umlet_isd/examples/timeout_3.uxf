@@ -42,26 +42,22 @@ iframe}</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>492</x>
-      <y>510</y>
+      <x>498</x>
+      <y>474</y>
       <w>294</w>
       <h>162</h>
     </coordinates>
     <panel_attributes>spec:
-0&lt;e3-e2&lt;=72
-0&lt;e7-e6&lt;=1
 e5-e1=88
 e9-e5=8
 e13-e9=8
 e16-e13=16
-0&lt;proj(e11-e10)&lt;=12
-0&lt;proj(e15-e14)&lt;=2
-0&lt;proj(e10-e17)&lt;=0.5
-0&lt;proj(e23-e22)&lt;=1.4
-0&lt;proj(e27-e26)&lt;=0.5
+0&lt;proj(e20-e17)&lt;=1
+0&lt;proj(e23-e22)&lt;=2
+0&lt;proj(e27-e26)&lt;=1
 
 prop:
-e13-e9&lt;16
+e13-e9&lt;8
 </panel_attributes>
     <additional_attributes/>
   </element>
